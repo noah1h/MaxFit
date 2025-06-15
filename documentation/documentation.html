@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Documentation for MaxFit – Modern Gym & Fitness HTML Template. Learn how to install, customize, and launch your theme.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Theme Documentation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +21,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg);
+  background-color: var(--background);
   color: var(--text);
 }
 
@@ -62,7 +63,7 @@ body {
 
 .content {
   flex-grow: 1;
-  background: var(--bg);
+  background: var(--background);
   overflow-y: auto;
 }
 
@@ -123,17 +124,28 @@ pre {
       <section id="structure">
         <h2>File Structure</h2>
         <pre>
-images
-css
-js
+/images
+/documentation  
+└── documentation.html
+/css-source  
+└── style.css (unminified)
+/css  
+└── style.css (linked to HTML)
+/js-source  
+└── script.js (unminified)
+/js  
+└── script.js (linked to HTML)
 index.html
-style.css
+announcements.html
+gallery.html
+about.html
+README.txt
         </pre>
       </section>
 
       <section id="customization">
         <h2>Customization</h2>
-        <p>Change text in <code>index.html</code>, update colors in <code>:root</code> of style.css, and customize interactions in <code>script.js</code>.</p>
+        <p>Change text in <code>index.html</code>, update colors in <code>:root</code> of css/style.css, and customize interactions in <code>script.js</code>.</p>
       </section>
 
       <section id="support">
@@ -146,11 +158,16 @@ style.css
         <ul>
           <li>Bootstrap 5</li>
           <li>Google Fonts</li>
-          <li>Font Awesome</li>
+          <li>JQuery</li>
+          <li>AOS.js</li>
         </ul>
       </section>
     </main>
   </div>
+  <footer class="text-center mt-5 text-muted">
+    MaxFit v1.0 – Created by Noah Mahmoud
+  </footer>
+  
 <script>
   document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', function (e) {
