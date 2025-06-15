@@ -34,13 +34,20 @@
     <!--AOS.js-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Css files-->
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css-minified/style.css">
   </head>
   <body>
     
+    <div id="preloader">
+      <div class="spinner-wrapper">
+        <svg class="custom-spinner" width="50" height="50" viewBox="0 0 50 50">
+          <circle cx="25" cy="25" r="20" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="60">
+            <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+              dur="1s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+    </div>
     <div class="sidebar d-lg-none d-md-block">
       <div class="sidebar-links">
         <a class="sidebar-link" href="about.html">About us</a>
@@ -81,50 +88,50 @@
     
     <main id="gallery">
       <div class="container">
-        <div class="gallery-title pb-5">Gym Gallery</div>
+        <div data-aos="fade-left" class="gallery-title pb-5">Gym Gallery</div>
         <div class="row g-3">
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" class="gallery-img">
           <img src="imgs/gym-interior-1.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="100" class="gallery-img">
           <img src="imgs/gym-interior-2.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="200" class="gallery-img">
           <img src="imgs/gym-image.jpeg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" class="gallery-img">
           <img src="imgs/gym-interior-1.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="100" class="gallery-img">
           <img src="imgs/gym-interior-2.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="200" class="gallery-img">
           <img src="imgs/gym-image.jpeg" class="img-fluid gallery-img gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" class="gallery-img">
           <img src="imgs/gym-interior-1.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="100" class="gallery-img">
           <img src="imgs/gym-interior-2.jpg" class="img-fluid gallery-img" alt="">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="gallery-img">
+        <div data-aos="fade-right" data-aos-delay="200" class="gallery-img">
           <img src="imgs/gym-image.jpeg" class="img-fluid gallery-img gallery-img" alt="">
         </div>
       </div>
@@ -202,7 +209,7 @@
 <script>
   AOS.init();
 </script>
-    <script src="js/sidebar.js"></script>
+<script src="js-minified/script.js"></script>
     
   </body>
 </html>
